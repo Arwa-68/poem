@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة القصائد</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- مربع حوار رمز الدخول -->
+    <div id="login-dialog" class="login-dialog">
+        <div class="dialog-content">
+            <h2>أدخل رمز الدخول</h2>
+            <input type="password" id="admin-password" placeholder="رمز الدخول" />
+            <button id="login-btn">دخول</button>
+            <p id="error-message" style="color: red; display: none;">الرمز غير صحيح! حاول مجدداً.</p>
+        </div>
+    </div>
+
+    <!-- المحتوى الأصلي لصفحة الإدارة -->
+    <div id="admin-content" style="display: none;">
+        <header>
+            <h1>إضافة القصائد</h1>
+        </header>
+
+        <form id="poem-form">
+            <label for="title">عنوان القصيدة</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">اسم الشاعر</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="content">نص القصيدة</label>
+            <textarea id="content" name="content" required></textarea>
+
+            <button type="submit">إضافة القصيدة</button>
+        </form>
+
+        <footer>
+            <p>حقوق النشر © 2024</p>
+        </footer>
+    </div>
+
+    <footer>
+        <p>حقوق النشر © 2024</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
